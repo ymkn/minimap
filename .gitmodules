@@ -1,0 +1,6 @@
+[submodule "KiCAD/lib/external/ymknlibs"]
+	path = KiCAD/lib/external/ymknlibs
+	url = https://github.com/ymkn/ymknlibs.git
+[submodule "KiCAD/lib/external/ymknlibs-nonfree"]
+	path = KiCAD/lib/external/ymknlibs-nonfree
+	url = https://github.com/ymkn/ymknlibs-nonfree.git

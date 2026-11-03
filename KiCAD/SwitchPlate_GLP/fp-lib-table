@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ymknlib_Switch_MX_GLP3_17mm") (type "KiCad") (uri "${KIPRJMOD}/../lib/external/ymknlibs/Switch/ymknlib_Switch_MX_GLP3_17mm.pretty") (options "") (descr "MX GLP3 17mm plate footprints; pinned 27a53aee; 14.1mm R0.5"))
+  (lib (name "ymknlibs-nonfree-logo") (type "KiCad") (uri "${KIPRJMOD}/../lib/external/ymknlibs-nonfree/ymknlibs-nonfree-logo.pretty") (options "") (descr "ymkn non-free logo footprints; pinned 4cd0a359"))
+)

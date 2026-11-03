@@ -1,0 +1,11 @@
+(version 1)
+
+# JLCPCB: 2-layer FR4, outer copper 1 oz. Reviewed 2026-10-11.
+# Ordinary through-hole pads need a larger ring than vias.
+(rule "JLCPCB PTH annular ring"
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
+  (constraint annular_width (min 0.25mm)))
+
+(rule "JLCPCB NPTH minimum drill"
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical'")
+  (constraint hole_size (min 0.5mm)))

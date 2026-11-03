@@ -1,0 +1,611 @@
+{
+  "name": "minimap",
+  "layerCount": 1,
+  "keys": [
+    {
+      "id": "1",
+      "x": 0,
+      "y": 1.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "Esc"
+      },
+      "matrix": {
+        "row": 1,
+        "col": 0
+      },
+      "keycodes": {
+        "0": "KC_ESC"
+      }
+    },
+    {
+      "id": "2",
+      "x": 1.25,
+      "y": 1.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "1"
+      },
+      "matrix": {
+        "row": 1,
+        "col": 1
+      },
+      "keycodes": {
+        "0": "KC_1"
+      }
+    },
+    {
+      "id": "3",
+      "x": 2.25,
+      "y": 1.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "2"
+      },
+      "matrix": {
+        "row": 1,
+        "col": 2
+      },
+      "keycodes": {
+        "0": "KC_2"
+      }
+    },
+    {
+      "id": "4",
+      "x": 3.25,
+      "y": 1.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "3"
+      },
+      "matrix": {
+        "row": 1,
+        "col": 3
+      },
+      "keycodes": {
+        "0": "KC_3"
+      }
+    },
+    {
+      "id": "5",
+      "x": 4.25,
+      "y": 1.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "4"
+      },
+      "matrix": {
+        "row": 1,
+        "col": 4
+      },
+      "keycodes": {
+        "0": "KC_4"
+      }
+    },
+    {
+      "id": "6",
+      "x": 5.25,
+      "y": 1.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "5"
+      },
+      "matrix": {
+        "row": 1,
+        "col": 5
+      },
+      "keycodes": {
+        "0": "KC_5"
+      }
+    },
+    {
+      "id": "15",
+      "x": 0,
+      "y": 2.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "Tab"
+      },
+      "matrix": {
+        "row": 2,
+        "col": 0
+      },
+      "keycodes": {
+        "0": "KC_TAB"
+      }
+    },
+    {
+      "id": "16",
+      "x": 1.25,
+      "y": 2.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "Q"
+      },
+      "matrix": {
+        "row": 2,
+        "col": 1
+      },
+      "keycodes": {
+        "0": "KC_Q"
+      }
+    },
+    {
+      "id": "17",
+      "x": 2.25,
+      "y": 2.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "W"
+      },
+      "matrix": {
+        "row": 2,
+        "col": 2
+      },
+      "keycodes": {
+        "0": "KC_W"
+      }
+    },
+    {
+      "id": "18",
+      "x": 3.25,
+      "y": 2.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "E"
+      },
+      "matrix": {
+        "row": 2,
+        "col": 3
+      },
+      "keycodes": {
+        "0": "KC_E"
+      }
+    },
+    {
+      "id": "19",
+      "x": 4.25,
+      "y": 2.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "R"
+      },
+      "matrix": {
+        "row": 2,
+        "col": 4
+      },
+      "keycodes": {
+        "0": "KC_R"
+      }
+    },
+    {
+      "id": "20",
+      "x": 5.25,
+      "y": 2.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "T"
+      },
+      "matrix": {
+        "row": 2,
+        "col": 5
+      },
+      "keycodes": {
+        "0": "KC_T"
+      }
+    },
+    {
+      "id": "29",
+      "x": 0,
+      "y": 3.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "Ctrl"
+      },
+      "matrix": {
+        "row": 3,
+        "col": 0
+      },
+      "keycodes": {
+        "0": "KC_LCTL"
+      }
+    },
+    {
+      "id": "30",
+      "x": 1.25,
+      "y": 3.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "A"
+      },
+      "matrix": {
+        "row": 3,
+        "col": 1
+      },
+      "keycodes": {
+        "0": "KC_A"
+      }
+    },
+    {
+      "id": "31",
+      "x": 2.25,
+      "y": 3.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "S"
+      },
+      "matrix": {
+        "row": 3,
+        "col": 2
+      },
+      "keycodes": {
+        "0": "KC_S"
+      }
+    },
+    {
+      "id": "32",
+      "x": 3.25,
+      "y": 3.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "D"
+      },
+      "matrix": {
+        "row": 3,
+        "col": 3
+      },
+      "keycodes": {
+        "0": "KC_D"
+      }
+    },
+    {
+      "id": "33",
+      "x": 4.25,
+      "y": 3.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "F"
+      },
+      "matrix": {
+        "row": 3,
+        "col": 4
+      },
+      "keycodes": {
+        "0": "KC_F"
+      }
+    },
+    {
+      "id": "34",
+      "x": 5.25,
+      "y": 3.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "G"
+      },
+      "matrix": {
+        "row": 3,
+        "col": 5
+      },
+      "keycodes": {
+        "0": "KC_G"
+      }
+    },
+    {
+      "id": "42",
+      "x": 0,
+      "y": 4.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "Shift"
+      },
+      "matrix": {
+        "row": 4,
+        "col": 0
+      },
+      "keycodes": {
+        "0": "KC_LSFT"
+      }
+    },
+    {
+      "id": "43",
+      "x": 1.25,
+      "y": 4.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "Z"
+      },
+      "matrix": {
+        "row": 4,
+        "col": 1
+      },
+      "keycodes": {
+        "0": "KC_Z"
+      }
+    },
+    {
+      "id": "44",
+      "x": 2.25,
+      "y": 4.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "X"
+      },
+      "matrix": {
+        "row": 4,
+        "col": 2
+      },
+      "keycodes": {
+        "0": "KC_X"
+      }
+    },
+    {
+      "id": "45",
+      "x": 3.25,
+      "y": 4.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "C"
+      },
+      "matrix": {
+        "row": 4,
+        "col": 3
+      },
+      "keycodes": {
+        "0": "KC_C"
+      }
+    },
+    {
+      "id": "46",
+      "x": 4.25,
+      "y": 4.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "V"
+      },
+      "matrix": {
+        "row": 4,
+        "col": 4
+      },
+      "keycodes": {
+        "0": "KC_V"
+      }
+    },
+    {
+      "id": "47",
+      "x": 5.25,
+      "y": 4.25,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "B"
+      },
+      "matrix": {
+        "row": 4,
+        "col": 5
+      },
+      "keycodes": {
+        "0": "KC_B"
+      }
+    },
+    {
+      "id": "54",
+      "x": 0,
+      "y": 5.5,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "Ctrl"
+      },
+      "matrix": {
+        "row": 5,
+        "col": 0
+      },
+      "keycodes": {
+        "0": "KC_LCTL"
+      }
+    },
+    {
+      "id": "55",
+      "x": 2.25,
+      "y": 5.5,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "Alt"
+      },
+      "matrix": {
+        "row": 5,
+        "col": 2
+      },
+      "keycodes": {
+        "0": "KC_LALT"
+      }
+    },
+    {
+      "id": "56",
+      "x": 3.25,
+      "y": 5.5,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "Lower"
+      },
+      "matrix": {
+        "row": 5,
+        "col": 3
+      },
+      "keycodes": {
+        "0": "KC_SPC"
+      }
+    },
+    {
+      "id": "57",
+      "x": 4.25,
+      "y": 5.5,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "Space"
+      },
+      "matrix": {
+        "row": 5,
+        "col": 4
+      },
+      "keycodes": {
+        "0": "KC_SPC"
+      }
+    },
+    {
+      "id": "1791619669423",
+      "x": 1.25,
+      "y": 0,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "F1"
+      },
+      "matrix": {
+        "row": 0,
+        "col": 1
+      },
+      "keycodes": {
+        "0": "KC_F1"
+      },
+      "shape": "rectangle"
+    },
+    {
+      "id": "1791619669603",
+      "x": 2.25,
+      "y": 0,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "F2"
+      },
+      "matrix": {
+        "row": 0,
+        "col": 2
+      },
+      "keycodes": {
+        "0": "KC_F2"
+      },
+      "shape": "rectangle"
+    },
+    {
+      "id": "1791619669775",
+      "x": 3.25,
+      "y": 0,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "F3"
+      },
+      "matrix": {
+        "row": 0,
+        "col": 3
+      },
+      "keycodes": {
+        "0": "KC_F3"
+      },
+      "shape": "rectangle"
+    },
+    {
+      "id": "1791619669955",
+      "x": 4.25,
+      "y": 0,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "F4"
+      },
+      "matrix": {
+        "row": 0,
+        "col": 4
+      },
+      "keycodes": {
+        "0": "KC_F4"
+      },
+      "shape": "rectangle"
+    },
+    {
+      "id": "1791619670149",
+      "x": 5.25,
+      "y": 0,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "F5"
+      },
+      "matrix": {
+        "row": 0,
+        "col": 5
+      },
+      "keycodes": {
+        "0": "KC_F5"
+      },
+      "shape": "rectangle"
+    },
+    {
+      "id": "1791624314095",
+      "x": 5.25,
+      "y": 5.5,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "Raise"
+      },
+      "matrix": {
+        "row": 5,
+        "col": 5
+      },
+      "keycodes": {
+        "0": "KC_SPC"
+      }
+    },
+    {
+      "id": "1791624817115",
+      "x": 1.25,
+      "y": 5.5,
+      "width": 1,
+      "height": 1,
+      "legend": {
+        "center": "Win"
+      },
+      "matrix": {
+        "row": 5,
+        "col": 1
+      },
+      "keycodes": {
+        "0": "KC_LGUI"
+      }
+    }
+  ],
+  "metadata": {
+    "author": "KLS",
+    "description": "gaming keypad for left-hand",
+    "modified": "2026-10-10T09:43:57.542Z"
+  }
+}
