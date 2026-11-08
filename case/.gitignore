@@ -1,0 +1,3 @@
+# Generated model outputs (STEP / STL / GLTF / preview PNGs) are not tracked.
+# The STEP is published to the step-viewer shelf instead of being committed.
+output/
