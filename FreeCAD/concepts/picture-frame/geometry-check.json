@@ -1,0 +1,117 @@
+{
+  "purpose": "Appearance concept only; production_ready=false",
+  "valid_single_solid": true,
+  "case_dimensions_mm": [
+    130.49999999999488,
+    130.5,
+    12.4
+  ],
+  "case_volume_mm3": 75784.77413543084,
+  "wall_thickness_mm": 7.5,
+  "outer_corner_radius_mm": 2.0,
+  "invalid_objects": [],
+  "underconstrained_sketches": [],
+  "block_constraints": 0,
+  "sketch_count": 36,
+  "source_sha256": "38e1c701b514d3f2b3a37d6ce7c0b045003a26e0194c7ef031f8b9c8a09a3111",
+  "mount_local_differences_mm3": [
+    {
+      "x": -34,
+      "y": -36.125,
+      "difference": 0.0
+    },
+    {
+      "x": -34,
+      "y": 36.125,
+      "difference": 0.0
+    },
+    {
+      "x": 34,
+      "y": -36.125,
+      "difference": 0.0
+    },
+    {
+      "x": 34,
+      "y": 36.125,
+      "difference": 0.0
+    }
+  ],
+  "unchanged_references": {
+    "PCBReference": {
+      "symmetric_difference_mm3": 0.0,
+      "same_placement": true
+    },
+    "PlateReference": {
+      "symmetric_difference_mm3": 0.0,
+      "same_placement": true
+    },
+    "WeightMetal": {
+      "symmetric_difference_mm3": 0.0,
+      "same_placement": true
+    },
+    "WeightPrint": {
+      "symmetric_difference_mm3": 0.0,
+      "same_placement": true
+    },
+    "ContactPads": {
+      "symmetric_difference_mm3": 0.0,
+      "same_placement": true
+    },
+    "FrontContactStrip": {
+      "symmetric_difference_mm3": 0.0,
+      "same_placement": true
+    }
+  },
+  "reference_intersections_mm3": {
+    "PCBReference": 0.0,
+    "PlateReference": 0.0,
+    "ComponentReferences": 0.0
+  },
+  "usb_roof_at_groove_mm": 1.535000000000009,
+  "terrace_top_z_mm": [
+    12.4,
+    12.05,
+    11.749999999999995
+  ],
+  "graduations": {
+    "total": 46,
+    "per_side": {
+      "north": 12,
+      "south": 12,
+      "east": 11,
+      "west": 11
+    },
+    "pitch_mm": 10.0,
+    "major_interval_mm": 50.0,
+    "width_mm": 1.0,
+    "stop_radius_mm": 0.5,
+    "short_profile_length_mm": 2.950000000000003,
+    "long_profile_length_mm": 4.149999999999999,
+    "assumed_flat_endmill_diameter_mm": 1.0,
+    "actual_depth_mm": 0.1999999999999691,
+    "removed_volume_mm3": 21.365332430403214,
+    "calibrated_instrument": false,
+    "arc_count": 92,
+    "min_profile_arc_radius_mm": 0.5,
+    "max_profile_arc_radius_mm": 0.5,
+    "open_mouth_probe_count": 46,
+    "max_mouth_residual_solid_length_mm": 0
+  },
+  "perimeter_groove": {
+    "width_mm": 1.0,
+    "depth_mm": 0.18,
+    "outer_plan_radius_mm": 1.5,
+    "inner_plan_radius_mm": 0.5
+  },
+  "underside_perimeter_relief_mm": {
+    "width": 3.0,
+    "depth": 0.35
+  },
+  "case_min_z_above_nominal_desk_mm": 0.22730491217749713,
+  "step": {
+    "valid_single_solid": true,
+    "volume_difference_mm3": 2.991451765410602e-06,
+    "cad_minus_step_mm3": 0.0,
+    "step_minus_cad_mm3": 0.0
+  }
+}

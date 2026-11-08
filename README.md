@@ -9,6 +9,7 @@
 | Choc V2 PCB・回路図 | `KiCAD/PCB/minimap_PCB.kicad_pro` | 114.5mm角、裏面ナット四点固定 |
 | Choc V2プレート | `KiCAD/SwitchPlate/minimap_ChocV2Plate.kicad_pro` | 114.5mm角、14.0mm・R0.5の35開口、厚さ1.2mm、市松・ロゴ・minimap文字 |
 | 本体ケース・奥端ウェイト | `FreeCAD/minimap.FCStd` | 外寸120.5mm角、110×14mmウェイト、5°、金属／3DP代替Body |
+| 額縁ケース検討案 | `FreeCAD/concepts/picture-frame/minimap_frame.FCStd` | 外寸130.5mm角、三段の額縁・46本の目盛り溝。現行ケースとは別の外観検討用 |
 | MX/GLP3 PCB・回路図 | `KiCAD/PCB_GLP/minimap_PCB.kicad_pro` | 126.25×114.5mm、旧ダンパー取付構造 |
 | GLP3プレート | `KiCAD/SwitchPlate_GLP/minimap_SwitchPlate.kicad_pro` | 126.25×114.5mm、14.1mm・R0.5の35開口、厚さ1.2mm |
 
@@ -26,7 +27,11 @@ minimap/
 │  ├─ SwitchPlate/          # Choc V2プレート
 │  ├─ SwitchPlate_GLP/      # GLP3プレート
 │  └─ lib/external/         # ymknlibs・非フリーロゴ
-├─ FreeCAD/                 # minimap.FCStd（本体・ウェイト）とSTEP/内の現行3点
+├─ FreeCAD/
+│  ├─ minimap.FCStd         # 現行の本体ケース・ウェイト
+│  ├─ STEP/                 # 現行CADに対応する3点
+│  └─ concepts/
+│     └─ picture-frame/     # 額縁検討案のCAD・STEP・画像・検査記録
 ├─ doc/                     # 恒久的な設計説明・input/KLS
 ├─ image/                   # 公開・説明用の恒久的な画像
 ├─ firmware/               # WSL側ファームウェアの所在案内
@@ -39,6 +44,8 @@ PCBの詳細は [doc/pcb.md](doc/pcb.md)、プレートは [doc/plates.md](doc/p
 
 作業履歴は `archive/` に保管する。過去のスクリプト・JSON・CAD内のSourceFile等に残る旧パスは履歴として保持しており、旧スクリプトをそのまま再実行しない。
 
+外観検討案は `FreeCAD/concepts/` 内で案ごとにまとめ、CAD・対応STEP・説明画像・既存検査記録を同じディレクトリに置く。現行設計の出力や恒久画像とは混在させない。詳細は [額縁検討案のREADME](FreeCAD/concepts/picture-frame/README.md) を参照。自動バックアップ・一時ファイルはGit対象外とし、残す必要のある控えは `archive/` に退避する。
+
 ## 依存ライブラリと出典
 
 - `KiCAD/lib/external/ymknlibs`：submodule、固定commit `db12e941510b766ef9056fc83638b4f0245368ad`。SWD三穴・暫定M2ナット・公称モデル・出典通知を含む。ライブラリの修正用リポジトリは `../ymknlibs`。
@@ -47,7 +54,13 @@ PCBの詳細は [doc/pcb.md](doc/pcb.md)、プレートは [doc/plates.md](doc/p
 - 外部ライブラリは `.gitmodules` とsubmoduleのcommitで版を固定し、自動更新しない。標準ライブラリはKiCad 10の環境変数を利用し、既存の `${KICAD8_3RD_PARTY}` 参照も残る。
 - ライブラリ・モデル・ロゴ等は、それぞれに同梱されたライセンス・通知に従う。
 
-clone後は `git submodule update --init --recursive` でライブラリを取得する。ライブラリを更新して共有するときは、ライブラリ側のcommitを先に公開し、そのcommitを参照するminimap側を後から公開する。非フリーライブラリの取得にはアクセス権が必要になる場合がある。
+取得先は `https://github.com/ymkn/minimap.git`。
+
+```sh
+git clone --recurse-submodules https://github.com/ymkn/minimap.git
+```
+
+通常のclone後は `git submodule update --init --recursive` でライブラリを取得する。ライブラリを更新して共有するときは、ライブラリ側のcommitを先に公開し、そのcommitを参照するminimap側を後から公開する。非フリーライブラリの取得にはアクセス権が必要になる場合がある。
 
 既存U3モデルの欠落と、検査環境で解決できないMXソケットの外部モデル参照は未修正。
 
